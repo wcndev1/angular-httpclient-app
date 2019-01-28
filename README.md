@@ -4,7 +4,7 @@ Please find the step by step tutorial [Angular 7 HttpClient & Http Methods – C
 
 This project was built with Angular CLI version 7.2.3.
 
-Please run `npm install` to install required dependencies.
+Run `npm install` to install required dependencies.
 
 ## Development server
 
