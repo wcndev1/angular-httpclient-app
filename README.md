@@ -1,6 +1,7 @@
-# Angular 7 HttpClient: Consume RESTful API with Http Methods
+# Angular 7 HttpClient
 
-Please find the step by step tutorial [Angular 7 HttpClient & Http Methods – Consume RESTful API Tutorial](https://www.positronx.io/angular-7-httpclient-http-service/)
+Please find the step by step tutorial [Angular 7 HttpClient & Http Services to Consume RESTful API
+](https://www.positronx.io/angular-7-httpclient-http-service/)
 
 This project was built with Angular CLI version 7.2.3.
 
