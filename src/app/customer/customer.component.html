@@ -1,0 +1,42 @@
+<p>Search customer By CustId</p>
+<div class="col-md-12">
+      <div class="form-group">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="custId" required [(ngModel)]="custId" name="custId">
+        </div>
+        <div>
+          <span class="col-md-4">
+            <button (click)="findByCustId()">Click Search</button>
+          </span>
+        </div>
+      
+      <table class="table table-striped">
+        <thead>
+          <tr >
+              <th scope="col" ><span >ID</span> </th>
+              <th scope="col"><span >Customer Name</span> </th>
+              <th scope="col" ><span j>Customer Lastname</span> </th>
+              <th scope="col"><span  >Nick name</span> </th>
+              <th scope="col"><span j>Last Bill</span> </th>
+              <th scope="col" ><span >Email</span> </th>
+              <th scope="col"><span >Pay Time</span> </th>
+              <th scope="col"><span >Send File</span> </th>
+              <th scope="col"></th>
+          </tr>
+      </thead>
+        <tbody>
+          <tr>
+              <td><a [routerLink]="['/updateCustomer', customerResponse.cusId, 'view']">{{ customerResponse.cusId }}</a></td>
+              <td>{{ customerResponse.rname }}</td>
+              <td>{{ customerResponse.sname }}</td>
+              <td>{{ customerResponse.nickName }}</td>
+              <td>{{ customerResponse.latestBill }}</td>
+              <td>{{ customerResponse.email }}</td>
+              <td>{{ customerResponse.payTime }}</td>
+              <td>{{ customerResponse.sentFile }}</td>
+          </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>

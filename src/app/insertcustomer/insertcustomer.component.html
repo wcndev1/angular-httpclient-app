@@ -1,0 +1,102 @@
+<form [formGroup]="profileForm" (ngSubmit)="createCustomer()">
+
+  <div>
+    <label>
+      First Name:
+      <input type="text" formControlName="rname">
+    </label>
+  </div>
+  <div>
+    <label>
+      Last Name:
+      <input type="text" formControlName="sname">
+    </label>
+  </div>
+  <div>
+    <label>
+      nickName:
+      <input type="text" formControlName="nickName">
+    </label>
+  </div>
+  <div>
+    <label>
+      Cust Code:
+      <input type="text" formControlName="cusCode">
+    </label>
+  </div>
+  <div>
+    <label>
+      Cust Id:
+      <input type="text" formControlName="cusId">
+    </label>
+  </div>
+  <div>
+    <label>
+      Address Id:
+      <input type="text" formControlName="addressId">
+    </label>
+  </div>
+  <div>
+    <label>
+      Email:
+      <input type="email" formControlName="email">
+    </label>
+  </div>
+  <div>
+    <label>
+      Ib Code:
+      <input type="text" formControlName="ibCode">
+    </label>
+  </div>
+  <div>
+    <label>
+      IdCard:
+      <input type="text" formControlName="idCard">
+    </label>
+  </div>
+  <div>
+    <label>
+      latestBill:
+      <input type="text" formControlName="latestBill">
+    </label>
+  </div>
+  <div>
+    <label>
+      payTime:
+      <input type="text" formControlName="payTime">
+    </label>
+  </div>
+  <div>
+    <label>
+      registerDate:
+      <input type="datetime" formControlName="registerDate">
+      <!-- <input type="date" formControlName="registerDate"> -->
+    </label>
+  </div>
+  <div>
+    <label>
+      sentFile:
+      <input type="datetime" formControlName="sentFile">
+    </label>
+  </div>
+  <div>
+    <label>
+      tel:
+      <input type="text" formControlName="tel">
+    </label>
+  </div>
+  <div>
+    <label>
+      Address:
+      <textarea formControlName="address" maxlength="50">
+      Enter text here...
+      </textarea>
+    </label>
+  </div>
+  
+  <div>
+    <button type="submit">
+      Save
+    </button>
+  </div>
+</form>

@@ -1,36 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
 
-// HttpClient module for RESTful API
-import { HttpClientModule } from '@angular/common/http';
-
-// Routing module for router service
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CustomerService } from './customer.service';
+import { FormsModule} from '@angular/forms';
 
-// Forms module
-import { FormsModule } from '@angular/forms';
-
-// Components
-import { EmployeeCreateComponent } from './employee-create/employee-create.component';
-import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
-import { EmployeesListComponent } from './employees-list/employees-list.component';
-
+import { CustomerComponent } from './customer/customer.component';
+import { UserComponent } from './user/user.component';
+import { InsertcustomerComponent } from './insertcustomer/insertcustomer.component';
+import { UpdateCustomerComponent } from './update-customer/update-customer.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeCreateComponent,
-    EmployeeEditComponent,
-    EmployeesListComponent
+    CustomerComponent,
+    UserComponent,
+    InsertcustomerComponent,
+    UpdateCustomerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [CustomerService],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
